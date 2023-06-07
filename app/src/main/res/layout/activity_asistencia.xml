@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_asistencia"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_login"
+        android:textColor="@color/white"
+        android:layout_marginRight="30dp"
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha" />
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/input_login"
+        android:textColor="@color/white"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora" />
+
+    <EditText
+        android:id="@+id/editDocumento"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/btn_amarillo"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Documento" />
+
+
+
+    <EditText
+        android:id="@+id/editPlaca"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_amarillo"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Placa" />
+
+    <EditText
+        android:id="@+id/editTipoVehiculo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_amarillo"
+        android:layout_height="45dp"
+        android:hint="Tipo de Vehículo" />
+
+    <EditText
+        android:id="@+id/editKilometraje"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_amarillo"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:hint="Kilometraje" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGuardar"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+
+
+
+</LinearLayout>
