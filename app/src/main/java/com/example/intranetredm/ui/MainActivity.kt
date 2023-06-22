@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnGoMenu = findViewById<Button>(R.id.btn_go_to_menu)
         btnGoMenu.setOnClickListener {
-            Toast.makeText(applicationContext, "", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Bienvenido", Toast.LENGTH_SHORT).show()
             performLogin()
         }
     }
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun goToMenu() {
-        val i = Intent(this, MenuActivity::class.java)
+        val i = Intent(this, MenuActivity2::class.java)
         startActivity(i)
         finish()
     }
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                     if (loginResponse.success) {
                         createSessionPreference(loginResponse.token)
                         val userName = loginResponse.user?.name
-                        val i = Intent(this@MainActivity, MenuActivity::class.java)
+                        val i = Intent(this@MainActivity, MenuActivity2::class.java)
                         i.putExtra("userName",userName )
                         startActivity(i)
                         finish()

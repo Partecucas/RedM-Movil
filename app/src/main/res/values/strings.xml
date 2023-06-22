@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">IntranetRedM</string>
+    <string name="title_activity_menu2">MenuActivity2</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+    <string name="nav_header_title">Menu de Acciones</string>
+    <string name="nav_header_subtitle">Bienvenido a Red de Marcas</string>
+    <string name="nav_header_desc">a</string>
+    <string name="action_settings">Salir</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Asistencia</string>
+    <string name="menu_slideshow">Capacitacion</string>
 </resources>

@@ -27,6 +27,18 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_to_capacitacion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_blanco"
+            android:text="Capacitacion"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="60dp"

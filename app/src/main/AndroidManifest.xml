@@ -16,9 +16,20 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.MenuActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_menu2"
+            android:theme="@style/Theme.IntranetRedM.NoActionBar" />
+        <activity
+            android:name=".ui.SplashCapacitacion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CapacitacionActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.AsistenciaActivity"
             android:exported="false"
-            android:launchMode="singleInstance"/>
+            android:launchMode="singleInstance" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="false"

@@ -37,11 +37,6 @@ class MenuActivity : AppCompatActivity() {
         tvUserName.text = userName
 
 
-        val btnAsistencia = findViewById<Button>(R.id.btn_go_to_asistencia)
-        btnAsistencia.setOnClickListener {
-            goToAsistencia()
-        }
-
         val btnLogout = findViewById<Button>(R.id.btn_logout)
         btnLogout.setOnClickListener {
             perfomLogout()
@@ -57,10 +52,7 @@ class MenuActivity : AppCompatActivity() {
         handler.removeCallbacks(logoutRunnable)
     }
 
-    private fun goToAsistencia() {
-        val i = Intent(this, AsistenciaActivity::class.java)
-        startActivity(i)
-    }
+
 
     private fun goToLogin() {
         val i = Intent(this, MainActivity::class.java)
