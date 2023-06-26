@@ -1,22 +1,17 @@
 package com.example.intranetredm.ui.views.Asistencia
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.intranetredm.R
-import com.example.intranetredm.databinding.FragmentGalleryBinding
+import com.example.intranetredm.databinding.FragmentAsistenciaBinding
 import com.example.intranetredm.io.response.asistencia.AsistenciaClient
 import com.example.intranetredm.io.response.asistencia.AsistenciaResponse
 import com.example.intranetredm.model.asistencia.DatosEnvio
-import com.example.intranetredm.ui.views.home.HomeFragment
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +20,7 @@ import java.util.*
 
 class AsistenciaFragment : Fragment() {
 
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentAsistenciaBinding? = null
     private lateinit var asistenciaClient: AsistenciaClient
     private lateinit var txthora: TextView
     private lateinit var txtfecha: TextView
@@ -38,21 +33,30 @@ class AsistenciaFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this).get(AsistenciaViewModel::class.java)
+        val galleryViewModel = ViewModelProvider(this).get(AsistenciaViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentAsistenciaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         asistenciaClient = AsistenciaClient.create()
 
-        val btnEnviar = root.findViewById<Button>(R.id.btnGuardar)
+        val btnEnviar = binding.btnGuardar
         btnEnviar.setOnClickListener {
             enviarDatos()
         }
 
-        txthora = root.findViewById(R.id.txtHora)
-        txtfecha = root.findViewById(R.id.txtFecha)
+        binding.radioGroupTipoVehiculo.setOnCheckedChangeListener { group, checkedId ->
+            if (checkedId == binding.radioButtonCarro.id) {
+                binding.carro.visibility = View.VISIBLE
+                binding.moto.visibility=View.GONE
+            }else if (checkedId==binding.radioButtonMoto.id){
+                binding.moto.visibility=View.VISIBLE
+                binding.carro.visibility = View.GONE
+            }
+        }
+
+        txthora = binding.txtHora
+        txtfecha = binding.txtFecha
 
         // Iniciar la actualización de fecha y hora
         updateDateTime()
@@ -116,7 +120,7 @@ class AsistenciaFragment : Fragment() {
                         return
                     }
                     if (apiResponse.success) {
-                        Toast.makeText(requireContext(), "Entrada registrada con exito", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), "Entrada registrada con éxito", Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(requireContext(), "Error en la respuesta del servidor", Toast.LENGTH_SHORT).show()
                     }

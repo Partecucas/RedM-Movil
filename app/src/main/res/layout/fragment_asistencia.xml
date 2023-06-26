@@ -1,0 +1,942 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_login"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha" />
+
+        <TextView
+            android:id="@+id/txtHora"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/input_login"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora" />
+
+
+        <EditText
+            android:id="@+id/editDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#d88e0c"
+            android:hint="Documento"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editPlaca"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:background="#d88e0c"
+            android:layout_height="45dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textColorHint="@color/white"
+            android:hint="Placa" />
+
+        <EditText
+            android:id="@+id/editTipoVehiculo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:background="#d88e0c"
+            android:layout_height="45dp"
+            android:hint="Tipo de Vehículo" />
+
+
+        <EditText
+            android:id="@+id/editKilometraje"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:background="#d88e0c"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:hint="Kilometraje" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/black"
+            android:text="Elementos de Proteccion"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Casco" />
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Guantes" />
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="black" />
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radioGroupTipoVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moto"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCarro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carro"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/carro"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/input_login"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="¿Cuáles de los siguientes papeles usted NO porta?"/>
+
+                    <CheckBox
+                        android:id="@+id/respuesta1_pregunta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Licencia de Tránsito del Vehículo (Tarjeta de propiedad)" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta2_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Seguro Obligatorio de Accidentes de Transito (SOAT)" />
+                    <CheckBox
+                        android:id="@+id/respuesta3_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Póliza de Responsabilidad Civil Extracontractual" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta4_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Certificado de Revisión Técnico Mecánica y de Gases" />
+                    <CheckBox
+                        android:id="@+id/respuesta5_pregunta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Certificado de fumigación (Solo vehículos de carga)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indique los elementos del equipo de carretera que NO posee"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta1_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Triángulos"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta2_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Tacos"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta3_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Herramienta básica"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta4_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Linterna"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta5_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Gato"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta6_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Palanca Gato"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta7_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="LLave"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta8_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Pernos"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta9_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Cruceta"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta10_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Chaleco Reflectivo"
+                        android:textColor="@color/white" />
+                    <CheckBox
+                        android:id="@+id/respuesta11_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Botiquin"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indique los elementos que NO están en buen estado"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta1_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Espejos Retrovisores"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta2_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Espejos Auxiliares"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta3_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Parabrisas"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta4_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Plumillas"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta5_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Gato"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta6_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Frenos delanteros y traseros"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta7_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Dirección"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta8_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Freno de emergencia"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta9_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Cinturones de seguridad"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta10_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indicadores de tablero"
+                        android:textColor="@color/white" />
+                    <CheckBox
+                        android:id="@+id/respuesta11_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Alarma de reversa"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Indique sólo lo que se encuentre en bajo/regular nivel"/>
+
+                    <CheckBox
+                        android:id="@+id/respuesta1_pregunta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Combustible" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta2_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite del motor" />
+                    <CheckBox
+                        android:id="@+id/respuesta3_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Líquido de frenos" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta4_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Líquido refrigerante" />
+                    <CheckBox
+                        android:id="@+id/respuesta5_pregunta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Depósito del limpiabrisas con agua" />
+
+                    <CheckBox
+                        android:id="@+id/respuesta6_pregunta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Presión de llantas" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/input_login"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:hint="Observaciones"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/moto"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_amarillo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="¿Cuáles de los siguientes papeles usted NO porta?"/>
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta1_pregunta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Licencia de Tránsito del Vehículo (Tarjeta de propiedad)" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta2_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Seguro Obligatorio de Accidentes de Transito (SOAT)" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta3_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Póliza de Responsabilidad Civil Extracontractual" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta4_pregunta1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Certificado de Revisión Técnico Mecánica y de Gases" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta5_pregunta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Certificado de fumigación (Solo vehículos de carga)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indique los elementos del equipo de carretera que NO posee"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta1_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Triángulos"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta3_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Herramienta básica"
+                        android:textColor="@color/white" />
+
+
+
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta4_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Guantes"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta5_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Impermeable"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta6_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Chaleco Reflectivo"
+                        android:textColor="@color/white" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta7_pregunta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Botiquin"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indique los elementos que NO están en buen estado"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta1_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Espejos Retrovisores"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta2_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Frenos Delanteros"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta3_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Direccion"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta4_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Indicadores de Tablero"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta5_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Luces Delanteras"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta6_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Luces de Freno Traseras"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta7_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Luces Direccionales"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta8_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Suspension"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta9_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Rines y Copas"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta10_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Pito"
+                        android:textColor="@color/white" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta11_pregunta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Llantas"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Indique sólo lo que se encuentre en bajo/regular nivel"/>
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta1_pregunta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Combustible" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta2_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite del motor" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta3_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Líquido de frenos" />
+
+                    <CheckBox
+                        android:id="@+id/moto_respuesta4_pregunta4"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Líquido refrigerante" />
+                    <CheckBox
+                        android:id="@+id/moto_respuesta5_pregunta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Presion de LLantas" />
+
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/input_login"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:hint="Observaciones"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="75dp"
+             android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_amarillo"
+            android:text="Guardar" />
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

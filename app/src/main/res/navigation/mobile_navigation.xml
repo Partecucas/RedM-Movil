@@ -15,11 +15,16 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.intranetredm.ui.views.Asistencia.AsistenciaFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_asistencia" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.intranetredm.ui.views.Capacitacion.CapacitacionFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_capacitacion" />
+    <fragment
+        android:id="@+id/nav_carro"
+        android:name="com.example.intranetredm.ui.views.Encuesta.EncuestaFragment"
+        android:label="@string/menu_carro"
+        tools:layout="@layout/fragment_encuesta" />
 </navigation>

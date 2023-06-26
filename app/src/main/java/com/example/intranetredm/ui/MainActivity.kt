@@ -9,8 +9,6 @@ import android.widget.Toast
 import com.example.intranetredm.R
 import com.example.intranetredm.io.response.LoginResponse
 import com.example.intranetredm.model.LoginRequest
-import com.example.intranetredm.ui.MenuActivity
-import com.example.intranetredm.ui.RegisterActivity
 import com.example.intranetredm.util.PreferenceHelper
 import com.example.intranetredm.util.PreferenceHelper.get
 import com.example.intranetredm.util.PreferenceHelper.set
@@ -39,10 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun goToRegister() {
-        val i = Intent(this, RegisterActivity::class.java)
-        startActivity(i)
-    }
+
 
     private fun goToMenu() {
         val i = Intent(this, MenuActivity2::class.java)

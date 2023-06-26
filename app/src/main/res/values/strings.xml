@@ -11,4 +11,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Asistencia</string>
     <string name="menu_slideshow">Capacitacion</string>
+    <string name="menu_carro">Encuesta-Carro</string>
+    <string name="menu_moto">Encuesta-Moto</string>
 </resources>

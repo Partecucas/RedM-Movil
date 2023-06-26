@@ -12,7 +12,7 @@ interface AsistenciaClient {
     fun enviarDatos(@Body datos: DatosEnvio): Call<AsistenciaResponse>  // Reemplaza ApiResponse con el nombre de tu clase de respuesta
 
     companion object Factory {
-        private const val BASE_URL = "http://192.168.101.76:3000/"
+        private const val BASE_URL = "http://192.168.101.77:3000/"
 
         fun create(): AsistenciaClient {
             val retrofit = Retrofit.Builder()

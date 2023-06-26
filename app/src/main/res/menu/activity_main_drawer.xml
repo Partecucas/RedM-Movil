@@ -16,5 +16,13 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_capacitacion"
             android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_moto"
+            android:icon="@drawable/ic_moto"
+            android:title="@string/menu_moto" />
+        <item
+            android:id="@+id/nav_carro"
+            android:icon="@drawable/ic_carro"
+            android:title="@string/menu_carro" />
     </group>
 </menu>

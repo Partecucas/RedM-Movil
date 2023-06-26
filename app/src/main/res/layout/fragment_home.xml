@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b71822"
-    tools:context=".ui.CapacitacionActivity">
+    android:background="#b71822">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:layout_width="342dp"
@@ -59,7 +59,9 @@ Proximamente en nuestras tiendas mas cercanas fecha de lanzamineto el 12/02/2023
                 android:layout_marginBottom="5dp"
                 android:layout_height="match_parent"/>
 
+
         </LinearLayout>
+
 
 
 

@@ -1,21 +1,17 @@
 package com.example.intranetredm.ui.views.Capacitacion
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.MediaController
 import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.VideoView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.intranetredm.R
-import com.example.intranetredm.databinding.FragmentSlideshowBinding
-import com.example.intranetredm.ui.RegisterActivity
+import com.example.intranetredm.databinding.FragmentCapacitacionBinding
 
 class CapacitacionFragment : Fragment() {
     private val videoResources = intArrayOf(
@@ -33,7 +29,7 @@ class CapacitacionFragment : Fragment() {
     private lateinit var progressBar: ProgressBar
     private var currentVideoIndex = 0
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentCapacitacionBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -44,7 +40,7 @@ class CapacitacionFragment : Fragment() {
         val slideshowViewModel =
             ViewModelProvider(this).get(CapacitacionViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentCapacitacionBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 
@@ -127,7 +123,7 @@ class CapacitacionFragment : Fragment() {
         // Aquí puedes mostrar las preguntas para los videos
         // Puedes crear una nueva actividad para mostrar las preguntas o utilizar un diálogo
         // Ejemplo:
-         val intent = Intent(requireContext(), RegisterActivity::class.java)
-        startActivity(intent)
+        // val intent = Intent(requireContext(), RegisterActivity::class.java)
+       // startActivity(intent)
     }
 }
